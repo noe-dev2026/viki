@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DatosPersonales</title>
+</head>
+<body>
+
+    <h1>Registro de datos</h1>
+
+    <script>
+        let continua = confirm("¿Desea agregar datos?");
+
+        if (continua) {
+            let nombre = prompt("Ingresa tu nombre: ");
+            let edad = Number(prompt("Ingresa tu edad: "));
+            let especialidad = prompt("Ingresa tu especialidad: ");
+            let correo = prompt("Ingresa tu correo: ");
+
+            document.write("Tu nombre es: " + nombre + "<br>");
+            document.write("Tu edad es: " + edad + "<br>");
+            document.write("Tu especialidad es: " + especialidad + "<br>");
+            document.write("Tu correo es: " + correo + "<br>");
+        } else {
+            document.write("No quisiste ingresar datos");
+        }
+    </script>
+
+    <br><br>
+    <a href="index.html">Regresar al menú principal</a>
+
+</body>
+</html>

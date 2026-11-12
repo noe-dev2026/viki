@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stilos.css">
+</head>
+<body>
+
+    <h1>Mi práctica de Métodos JavaScript</h1>
+
+    <!-- 1. innerHTML -->
+    <h2>1. innerHTML</h2>
+    <p id="mensaje">Hola mundo</p>
+    <div id="imagen"></div>
+
+    <hr>
+
+    <!-- 2. getElementById -->
+    <h2>2. getElementById()</h2>
+    <p id="aviso">Mensaje inicial</p>
+    <button id="btn">Haz clic</button>
+
+    <hr>
+
+    <!-- 3. querySelector -->
+    <h2>3. querySelector()</h2>
+    <p class="destacado">Texto importante</p>
+    <button class="btn">Enviar</button>
+
+    <script>
+        // 1. innerHTML - Ejemplo 1: cambiar texto
+        document.getElementById("mensaje").innerHTML = "¡Bienvenido!";
+
+        // 1. innerHTML - Ejemplo 2: agregar MI IMAGEN DEL GATITO
+        document.getElementById("imagen").innerHTML = '<img src="gatito.png.jpeg" alt="Mi gatito de café" width="300">';
+
+        // 2. getElementById() - Ejemplo 1: mostrar un mensaje
+        var elemento = document.getElementById("aviso");
+        elemento.textContent = "Hola Estudiantes";
+
+        // 2. getElementById() - Ejemplo 2: cambiar el color de un botón
+        document.getElementById("btn").style.backgroundColor = "lightblue";
+
+        // 3. querySelector() - Ejemplo 1: obtener un elemento por clase
+        document.querySelector(".destacado").style.color = "red";
+
+        // 3. querySelector() - Ejemplo 2: obtener un botón y deshabilitarlo
+        document.querySelector(".btn").disabled = true;
+    </script>
+
+    <br><br>
+    <a href="index.html">Regresar al menú principal</a>
+
+</body>
+</html>

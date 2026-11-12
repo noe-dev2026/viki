@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPERACIONES</title>
+</head>
+<body>
+
+    <h1>MENÚ DE OPERACIONES</h1>
+
+    <script>
+        let opcion = parseInt(prompt(
+            "MENÚ DE OPERACIONES\n" +
+            "1. Suma\n" +
+            "2. Resta\n" +
+            "3. Multiplicación\n" +
+            "4. División\n" +
+            "5. Salir\n" +
+            "Elige una opción:"
+        ));
+
+        if (opcion >= 1 && opcion <= 4) {
+            let num1 = parseFloat(prompt("Ingresa el primer número:"));
+            let num2 = parseFloat(prompt("Ingresa el segundo número:"));
+
+            if (opcion == 1) {
+                let resultado = num1 + num2;
+                document.write("La suma es: " + resultado);
+            } else if (opcion == 2) {
+                let resultado = num1 - num2;
+                document.write("La resta es: " + resultado);
+            } else if (opcion == 3) {
+                let resultado = num1 * num2;
+                document.write("La multiplicación es: " + resultado);
+            } else if (opcion == 4) {
+                if (num2 != 0) {
+                    let resultado = num1 / num2;
+                    document.write("La división es: " + resultado);
+                } else {
+                    document.write("No se puede dividir entre cero");
+                }
+            }
+        } else if (opcion == 5) {
+            document.write("Has salido del programa");
+        } else {
+            document.write("Opción no válida");
+        }
+    </script>
+
+    <br><br>
+    <a href="index.html">Regresar al menú principal</a>
+
+</body>
+</html>

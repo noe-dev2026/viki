@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Cotejo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            margin: 20px;
+            color: #000;
+        }
+        h2 {
+            text-align: center;
+            color: #1a4d8f;
+            font-size: 16px;
+            margin-bottom: 2px;
+            text-transform: uppercase;
+        }
+        .asignatura {
+            text-align: center;
+            font-weight: bold;
+            font-size: 11px;
+            margin-bottom: 15px;
+        }
+        .datos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 10px;
+            font-size: 11px;
+        }
+        .datos span {
+            border-bottom: 1px solid #000;
+            min-width: 180px;
+            display: inline-block;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 4px 6px;
+            text-align: left;
+        }
+        th {
+            background-color: #1a4d8f;
+            color: white;
+            text-align: center;
+            font-size: 11px;
+        }
+        .seccion {
+            background-color: #bcd8f0;
+            color: #000;
+            font-weight: bold;
+            text-align: left;
+        }
+        .centro { text-align: center; }
+        .check { text-align: center; font-size: 14px; }
+        .pie td {
+            background-color: #bcd8f0;
+            font-weight: bold;
+        }
+        .pie .blanco { background-color: white; font-weight: normal; }
+        a {
+            display: block;
+            margin-top: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Lista de Cotejo: Proyecto de Página Web</h2>
+<p class="asignatura">Asignatura: Desarrollo de páginas web (HTML5 y CSS)</p>
+
+<div class="datos">
+    <div>Nombre del alumno: <span>&nbsp;</span></div>
+    <div>Grupo: <span>&nbsp;</span></div>
+    <div>Fecha: <span>&nbsp;</span></div>
+</div>
+<div class="datos">
+    <div>Nombre del proyecto: <span>&nbsp;</span></div>
+    <div>URL publicada: <span>&nbsp;</span></div>
+</div>
+
+<table>
+    <tr>
+        <th style="width:35px;">No.</th>
+        <th>Criterio de evaluación</th>
+        <th style="width:55px;">Sí (1)</th>
+        <th style="width:55px;">No (0)</th>
+    </tr>
+
+    <tr><td colspan="4" class="seccion">A. ELEMENTOS HTML</td></tr>
+    <tr><td class="centro">1</td><td>Incluye un favicon en la pestaña del navegador.</td><td class="check">☐</td><td class="check">☐</td></tr>
+    <tr><td class="centro">2</td><td>Utiliza listas ordenadas (ol).</td><td class="check">☐</td><td class="check">☐</td></tr>
+    <tr><td class="centro">3</td><td>Utiliza listas desordenadas (ul).</td><td class="check">☐</td><td class="check">☐</td></tr>
+    <tr><td class="centro">4</td><td>Listas de definición.</td><td class="check">☐</td><td class="check">☐</td></tr>
+    <tr><td class="centro">5</td><td>Incluye una tabla con filas y celdas (tr, td).</td><td class="check">☐</td><td class="check">☐</td></tr>
+    <tr><td class="centro">6</td><td>Utiliza encabezados de tabla (th).</td><td class="check">☐</td><td class="check">☐</td></tr>
+    <tr><td class="centro">7</td><td>Integra un video en la página web.</td><td class="check">☐</td><td class="check">☐</td></tr>
+    <tr><td class="centro">8</td><td>El video cuenta con controles de reproducción.</td><td class="check">☐</td><td class="check">☐</td></tr>
+    <tr><td class="centro">9</td><td>Incluye imágenes relacionadas con el tema.</td><td class="check">☐</td><td class="check">☐</td></tr>
+    <tr><td class="centro">10</td><td>Las imágenes contienen el atributo alt.</td><td class="check">☐</td><td class="check">☐</td></tr>
+
+    <tr><td colspan="4" class="seccion">B. ESTILOS CSS</td></tr>
+    <tr><td class="centro">11</td><td>Aplica colores, fondos, bordes y estilos de texto.</td><td class="check">☐</td><td class="check">☐</td></tr>
+    <tr><td class="centro">12</td><td>Utiliza márgenes, rellenos y espacios adecuados.</td><td class="check">☐</td><td class="check">☐</td></tr>
+    <tr><td class="centro">13</td><td>Presenta un diseño ordenado y legible.</td><td class="check">☐</td><td class="check">☐</td></tr>
+    <tr><td class="centro">14</td><td>La página se adapta a dispositivos móviles y computadoras.</td><td class="check">☐</td><td class="check">☐</td></tr>
+
+    <tr><td colspan="4" class="seccion">C. FORMULARIO GET</td></tr>
+    <tr><td class="centro">15</td><td>Incluye un formulario HTML funcional.</td><td class="check">☐</td><td class="check">☐</td></tr>
+    <tr><td class="centro">16</td><td>Configura el atributo method="get".</td><td class="check">☐</td><td class="check">☐</td></tr>
+    <tr><td class="centro">17</td><td>Incluye campos de entrada (input) adecuados.</td><td class="check">☐</td><td class="check">☐</td></tr>
+    <tr><td class="centro">18</td><td>Utiliza etiquetas label para identificar los campos.</td><td class="check">☐</td><td class="check">☐</td></tr>
+    <tr><td class="centro">19</td><td>Incluye un botón para enviar el formulario.</td><td class="check">☐</td><td class="check">☐</td></tr>
+    <tr><td class="centro">20</td><td>Verifica que los datos enviados aparezcan como parámetros en la URL.</td><td class="check">☐</td><td class="check">☐</td></tr>
+
+    <tr><td colspan="4" class="seccion">D. ALOJAMIENTO EN HOSTING GRATUITO</td></tr>
+    <tr><td class="centro">21</td><td>Crea una cuenta en una plataforma de alojamiento gratuito.</td><td class="check">☐</td><td class="check">☐</td></tr>
+    <tr><td class="centro">22</td><td>Crea un repositorio o proyecto para publicar la página.</td><td class="check">☐</td><td class="check">☐</td></tr>
+    <tr><td class="centro">23</td><td>Sube los archivos HTML, CSS, JavaScript e imágenes necesarios.</td><td class="check">☐</td><td class="check">☐</td></tr>
+    <tr><td class="centro">24</td><td>Configura correctamente el servicio de publicación del hosting.</td><td class="check">☐</td><td class="check">☐</td></tr>
+    <tr><td class="centro">25</td><td>Publica la página y obtiene una dirección URL pública.</td><td class="check">☐</td><td class="check">☐</td></tr>
+    <tr><td class="centro">26</td><td>Comprueba que la página publicada abre desde el enlace proporcionado.</td><td class="check">☐</td><td class="check">☐</td></tr>
+    <tr><td class="centro">27</td><td>Verifica que las imágenes, el favicon, los estilos y el video funcionen en línea.</td><td class="check">☐</td><td class="check">☐</td></tr>
+    <tr><td class="centro">28</td><td>Comprueba que la página se visualice correctamente en móviles y computadoras.</td><td class="check">☐</td><td class="check">☐</td></tr>
+    <tr><td class="centro">29</td><td>Entrega la URL pública al docente como evidencia del proyecto.</td><td class="check">☐</td><td class="check">☐</td></tr>
+    <tr><td class="centro">30</td><td>Verifica que los enlaces y el formulario funcionen según su configuración.</td><td class="check">☐</td><td class="check">☐</td></tr>
+</table>
+
+<br>
+
+<table class="pie">
+    <tr>
+        <td>Puntaje obtenido</td>
+        <td class="blanco">_____ / 30 puntos</td>
+        <td>Calificación</td>
+        <td class="blanco">_____ / 10</td>
+    </tr>
+    <tr>
+        <td>Observaciones del docente</td>
+        <td class="blanco" colspan="1"></td>
+        <td>Firma</td>
+        <td class="blanco"></td>
+    </tr>
+</table>
+
+<a href="index.html">Regresar al menú principal</a>
+
+</body>
+</html>
